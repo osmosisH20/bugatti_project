@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+body{
+    background-image: url("bugatti-chiron-superman-edition-av1jzjam1uzkflp2.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+div.form{
+    box-shadow: 10px 10px 30px rgba(114, 114, 114, 0.604);
+    position: relative;
+    margin: 12em 10em;
+    display: flex;
+    border-radius: 15px;
+    background-color: rgba(42, 42, 42, 0.666); 
+}
+
+div.info{
+    position: relative;
+    margin: 15px;
+    width: 45%;
+    padding: 35px;
+    border-radius: 15px;
+    background-color: rgba(81, 56, 135, 0.99);
+}
+div.info .word h1{
+    width: max-content;
+    font-size: 70px;
+    font-family: var(--guanggao);
+    letter-spacing: 7px;
+    font-weight: 500;
+    color: var(--yellow2);
+}
+div.info .word h2{
+    font-size: 25px;
+    font-weight: 100;
+    color: var(--grey1);
+}
+div.info .word p{
+    margin-top: 5px;
+    font-size: 15px;
+    color: var(--grey4);
+}
+
+div.info-first{
+    list-style: none;
+    font-size: 27px;
+    color: var(--yellow1);
+    margin: 1.3em 0 0 0.5em;
+}
+div.info-first li i{
+    color: var(--yellow2);
+}
+div.info-first li{
+    display: flex;
+    padding: 20px 0;
+}
+div.info-first li p{
+    color: var(--grey1);
+    font-family: var(--times);
+    margin-left: 30px;
+}
+
+div.bioage{
+
+    margin: 25px;
+    width: 2000px;
+}
+
+div.bioage label{
+    font-size: 32px;
+    color: rgba(200, 175, 255, 0.99);
+}
+
+div.bioage div{
+   margin-bottom: 2em;
+}
+ 
+div.bioage form div input,div.bioage form div textarea{
+    border-radius: 10px;
+    margin-top: 5px;
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--pink1);
+    padding: 10px 7px;
+    font-size: 27px;
+    font-family: var(--times);
+    color: var(--grey1);
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+::placeholder{
+    color: var(--grey4);
+}
+div.bioage div.second{
+    display: flex;
+}
+div.bioage div.second span{
+    width: 100%;
+}
+div.bioage div.second span:nth-child(2){
+    margin-left: 20px;
+}
+
+div.more_info{
+    text-align: center;
+}
+div.more_info button a{
+    font-size: 23px;
+}
+div.more_info button{
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    transform: scale(1);
+    background: transparent;
+    border: 1.9px solid var(--grey2);
+    outline: none;
+    transition: 1s;
+    box-shadow: 5px 5px 9px var(--grey8) ;
+}
+div.more_info button:hover{
+    background-color: rgb(62, 20, 154, 0.7);
+}
+div.more_info button a span{
+    color: var(--grey2);
+}
+div.more_info button:hover a span{
+    color: var(--yellow2);
+}
+div.more_info button:active{
+    transition: 50ms;
+    transform: scale(0.9);
+}
+div.more_info svg{
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    fill: none;
+    stroke: var(--yellow2);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s;
+}
+div.more_info button:hover svg {
+    stroke-dashoffset: -480;
+}
+
+
+div.more_info svg{
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    fill: none;
+    stroke: var(--yellow2);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s;
+}
+div.more_info button:hover svg {
+    stroke-dashoffset: -480;
+}

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+    text-transform: none; 
+    font-family: var(--zhengkai);
+    color:var(--grey4);
+}
+
+
+/* 滚动轮一堆参数 */
+::-webkit-scrollbar{
+    width:13px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(239, 239, 239);
+}
+::-webkit-scrollbar-thumb{
+    background: #bfbfbf;
+    border-radius:5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #333;
+}
+::-webkit-scrollbar-corner{
+    background: #179a16;
+}
+
+
+/* hightlight & 字体颜色 */
+::selection{
+    background: yellow;
+    color:black;
+}
+
+
+@font-face {
+    font-family: '广告';
+    src: url("fontFamily/广告.ttf");
+}
+@font-face {
+    font-family: '正楷';
+    src: url("fontFamily/正楷.ttf");
+}
+@font-face {
+    font-family: '正楷粗';
+    src: url("fontFamily/正楷粗.ttf");
+}
+@font-face {
+    font-family: '江西拙楷';
+    src: url("fontFamily/江西拙楷.ttf");
+}
+@font-face {
+    font-family: '繁体毛笔字';
+    src: url("fontFamily/繁体毛笔字.ttf");
+}
+@font-face {
+    font-family: '细正楷';
+    src: url("fontFamily/细正楷.ttf");
+}
+@font-face {
+    font-family: '行楷';
+    src: url("fontFamily/行楷.ttf");
+}
+
+
+:root{
+    --black: #040403;
+    --paleBlack: #121212;
+    --blue:#2997ff;
+    --red:#ff1867;
+    --pink1:#ffe3ff;
+    --pink2:#ffb6ff;
+    --pink3:#b344ff;
+    --pink4:#ae38ff;
+    --yellow1:#ffe993;
+    --yellow2:#eb831c;
+
+    /* color of font */
+    --grey1: #f5f5f7;
+    --grey2: #d2d2d7;
+    --grey3: #cecece;
+    --grey4: #c4c4c4;
+    --grey5: #86868b;
+    --grey6: #6e6e73;
+    --grey7: #424245;
+    --grey8: #1d1d1f;
+    --grey9: #181818;
+
+    /* font-family */
+    --liantizi: 'Permanent Marker', cursive;
+    --yingguangao: 'Luckiest Guy', cursive;
+    --times: 'Times New Roman', Times, serif;
+    --guanggao:'广告';
+    --zhengkai:'正楷';
+    --zhengkai_chu:'正楷粗';
+    --jiangxizhuokai:'江西拙楷';
+    --fantimaobizi:'繁体毛笔字';
+    --xizhengkai:'细正楷';
+    --xingkai:'行楷';
+}

@@ -1,0 +1,46 @@
+.yikuai{
+    margin: 2em;
+    background-color: rgba(102, 102, 102, 0.429);
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+div.work{
+    margin: 10em 6em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name{
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: 0 1px 2px black;
+}
+.name p{
+    color: var(--yellow2);
+    font-size: 50px;
+    font-family: var(--guanggao);
+}
+
+div.yikuai div.link{
+    display: flex;
+    align-items: center;
+    margin: 50px 0 0 50px;
+}
+
+div.link p{
+    color: var(--grey5);
+    font-size: 35px;
+    margin-left: 2em;
+    transition: 0.5s;
+}
+
+div.link a:hover p{
+    color: black;
+}
+
+div.link i{
+    font-size: 50px;
+    color: var(--yellow2);
+}

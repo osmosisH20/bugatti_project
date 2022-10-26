@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css" />
+    <link rel="stylesheet" href="metiral.css" type="text/css" />
+    <link rel="icon" href="../24 image/logo/icon.ico" type="image/png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <title>BUGATTI-隐私政策</title>
+    
+    <script src="https://kit.fontawesome.com/58c3e06e25.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header class="before">
+        <nav>
+            <ul>
+                <div>
+                    <li><a href="#">历史</a></li>
+                    <li><a href="../carHome.html">车型</a></li> 
+                </div>
+                <a href="#">
+                    <img src="../24 image/logo/white_logo.svg" alt="Bugatti" title="Bugatti">
+                </a>
+                <div>
+                    <li><a href="#">新闻</a></li>
+                    <li><a href="../work.html">分工</a></li>
+                </div>  
+            </ul>
+        </nav>
+
+        <script>
+            window.addEventListener('scroll',function(){
+            let before = document.querySelector('.before');
+           if(window.scrollY>0)
+            {
+                before.classList.add("after");  
+            }else{
+                before.classList.remove("after");
+            }
+        })
+        </script>
+
+    </header>
+
+    <div class="word">
+
+        <div class="word_title">    
+            <h1>退款服务</h1>
+        </div>
+    
+        <div class="word_content">
+            <div>
+                <p>很抱歉您对所购买的产品不满意。当然，在这种情况下，您可以使用您的退货权。我们也很乐意在保证或保修的情况下为您提供帮助您可以在<b>30天</b>内将您的订单退回给我们。为了快速顺利的处理，请告诉我们退货的物品、数量和原因。</p>
+                <div class="more_info">
+                    <button>
+                        <a href="#tuikuan">
+                            <svg class="border" width="180px" height="60px" viewbox="0 0 180 60">
+                            <polyline class="bg-line" points="179,1 179,59 1,59 1,1 179,1" />
+                            <polyline class="hl-line" points="179,1 179,59 1,59 1,1 179,1"  />
+                            </svg>
+                            <span style="font-size: 18px;">点击这里申请退款</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+       
+            <div class="xingxi">
+                <h2 class="title">1. 处理时间</h2>
+                <p>处理退货和退还已付金额最多可能需要 14 天。通常，在一个星期以内就可以完成一切退款。</p>
+            </div>
+
+            <div class="xingxi">
+                <h2 class="title">2. 退还购买金额</h2>
+                <p>一旦我们接受了您的退货，我们将向您发送一封电子邮件，确认您的退货退款。如果您是赊购，我们将根据报销金额减少您的付款。如果您已经支付了货款，我们将退还相应的金额。我们总是将您的还款转入您付款的账户，即您的银行账户、信用卡账户或 PayPal 账户。如果在个别情况下无法做到这一点，例如如果您的信用卡不再有效，我们会要求您提供银行账户。</p>
+            </div>
+        
+            <div class="xingxi">
+                <h2 class="title">3. 免费退货</h2>
+                <p>我们完全接管<span class="about_info about_info_3">运输与付款</span>里所提到的国家的退货。</p>
+                <p>请注意，这仅适用于在<b>本网站上</b>购买的商品的退货。未在本网站上购买的商品退回寄件人将收取一定费用。</p>
+            </div>
+
+            <div class="xingxi" style="opacity: 0.89;">
+                <h2 class="title" style="font-size: 30px;">你还有问题吗？</h2> 
+                <div class="more_info" style="left:0;" id="tuikuan">
+                    <button>
+                        <a href="contact-us.html">
+                            <svg class="border" width="180px" height="60px" viewbox="0 0 180 60">
+                            <polyline class="bg-line" points="179,1 179,59 1,59 1,1 179,1" />
+                            <polyline class="hl-line" points="179,1 179,59 1,59 1,1 179,1"  />
+                            </svg>
+                            <span style="font-size: 18px;">联系我们</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="tuikuan">
+                <div class="tuikuan_title">
+                    <p>填写下方表格以进行退款</p>
+                    <i class="fa-solid fa-down-long"></i>
+                </div>
+
+                <div class="form">
+                    <form id="box" autocomplete="off" onsubmit="return false;" method="POST">
+                        <div class="form_form">
+                            <div>
+                                <label for="fname">名字</label>
+                                <br>
+                                <input type="text" id="name" placeholder="BUGATTI" required>
+                            </div>
+                            <div>
+                                <label for="fname">电子邮件</label>
+                                <br>
+                                <input type="text" id="email" placeholder="examples@bugatti.my" onkeyup="test()" required>
+                                <span id="text_1" style="top: 90px;"></span>
+                            </div>
+                            <div>
+                                <label for="fname">订单号码</label>
+                                <br>
+                                <div class="track_num" style="padding: 0;">
+                                    <input type="text" id="carNumber_one" style="width: 10%;" placeholder="A" maxlength="1" required>
+                                    <label for="">-</label>
+                                    <input type="text" id="carNumber_two" style="width: 18%;" placeholder="1A1" maxlength="3" required>
+                                    <label for="">-</label>
+                                    <input type="text" id="carNumber_three" style="width: 25%;" placeholder="1XY24Z" maxlength="6" required>
+                                </div>
+                                <span id="text_2" style="top: 80px;"></span>
+                            </div>
+                            <div class="click">
+                                <input type="checkbox" id="conform" style="font-size: 50px;" required>
+                                <label for="fname">我接受 <a href="privacy.html">隐私政策</a>  &  <a href="terms-of-use.html">使用条款</a> </label>
+                                <br>
+                            </div>
+                            <div class="submit">
+                                <button type="submit" id="button" onclick="sendM()">提交</button>
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("cqx_TucnyULERmaEM");
+        })();
+    </script>
+
+    <footer> 
+        <nav> 
+            <div>
+                <li class="goBack">
+                    <a href="#" rel="internal">
+                        <i class="fa-solid fa-angle-up" title="回到上面"></i>
+                        <i class="fa-solid fa-angle-up" style=" opacity: 0.8;" title="回到上面"></i>
+                        <i class="fa-solid fa-angle-up" style="opacity: 0.6;"  title="回到上面"></i>
+                        <i class="fa-solid fa-angle-up" style=" opacity: 0.4;"  title="回到上面"></i>
+                    </a>
+                </li> 
+            </div>
+
+            <ul class="icon"> 
+                <li class="facebook">
+                    <a href="https://www.facebook.com/bugatti/" target="_blank">
+                        <i class="fa-brands fa-facebook-f" style="--iconClr:#4267B2"></i>
+                    </a>
+                </li> 
+                <li class="youtube">
+                    <a  href="https://www.youtube.com/BugattiSocial" target="_blank">
+                        <i class="fa-brands fa-youtube" style="--iconClr:#FF0000"></i>
+                    </a>
+                </li> 
+                <li class="whatsapp">
+                    <a href="https://www.whatsapp.com/" target="_blank">
+                        <i class="fa-brands fa-whatsapp" style="--iconClr:#25D366"></i>
+                    </a>
+                </li> 
+                <li class="instagram">
+                    <a  href="https://instagram.com/bugatti" target="_blank">
+                        <i class="fa-brands fa-instagram" style="--iconClr:#C13584"></i>
+                    </a>
+                </li> 
+                <li class="pinterest">
+                    <a href="https://www.pinterest.de/bugatti/" target="_blank">
+                        <i class="fa-brands fa-pinterest-p" style="--iconClr:#E60023"></i>
+                    </a>
+                </li> 
+                <li class="gmail">
+                    <a href="mailto:#contus.bugatti@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope" style="--iconClr:#FBBC05"></i>
+                    </a>
+                </li> 
+            </ul> 
+
+            <div class="contact">
+                <a href="contact-us.html"><span>联系我们</span><i></i></a>
+            </div>
+
+            <ul class="metiral">
+                <a href="privacy.html"><li>隐私政策</li></a>
+                <a href="terms-of-use.html"><li>使用条款</li></a>
+                <a href="legal-notice.html"><li>法律声明</li></a>
+                <a href="ethics-and-culture.html"><li>道德与文化</li></a>
+                <a href="shipping-payment.html"><li>运输和付款</li></a>
+                <a href="back-service.html"><li>退款政策</li></a>
+            </ul>
+        </nav>
+
+        <hr />
+
+        <div class="under">
+            <div class="logo" title="bugatti">
+                <a href="home.html">
+                    <img src="../24 image/logo/white_logo.svg" alt="bugatti_logo">
+                    <h1>Bugatti</h1>
+                </a>
+            </div> 
+
+            <div class="copyright"> 
+                <span> Copyright © 2022. Bugatti Automobiles S.A.S. All Right Reserved </span> 
+            </div>
+
+            <div class="payment">
+                <div class="first">
+                    <span><img src="../24 image/payment/zhifubao.png" alt="apple-pay"></span>
+                    <span><img src="../24 image/payment/shopee.png" alt="shoppe-pay"></span>
+                    <span><img src="../24 image/payment/boost.png" alt="boost-pay"></span>
+                </div>
+                <div class="second">
+                    <span><img src="../24 image/payment/paypal.png" alt="paypal-pay"></span>
+                    <span><img src="../24 image/payment/mastercard.png" alt="master-pay"></span>
+                    <span><img src="../24 image/payment/visa.png" alt="visa-pay"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

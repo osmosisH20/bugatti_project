@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+b,a{
+    font-weight: 200;
+}
+div.word{
+    margin: 0 17em 100px 17em ;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+div.word div.xingxi a{
+    color: var(--grey5);
+    transition: 0.4s;
+}
+
+div.word div.xingxi a:hover{
+    transition: 0.4s;
+    color: var(--grey4);
+    text-decoration: underline;
+}
+div.word div.xingxi a:visited{
+    color: var(--grey4);
+}
+
+div.word_title h1{
+    color: var(--grey2);
+    text-align: left;
+    margin: 2.5em 0 5px 0;
+    font-size: 60px;
+}
+
+div.xingxi h2.title{
+    color: var(--grey4);
+    font-size: 40px;
+    margin: 35px 0 15px 0 ;
+    position: relative;
+}
+
+div.word_content p{
+    font-size: 25px;
+    padding-bottom: 9px;
+    color: var(--grey5);
+    font-family: var(--xizhengkai);
+    font-weight: 500;
+}
+
+div.word_content li{
+    padding: 0;
+    color: var(--grey5);
+    font-size: 25px;
+}
+
+div.more_info{
+    margin: 30px 0;
+    width: 180px;
+    height: 60px;
+    position: relative;
+    left: 45%;
+}
+div.xingxi div.more_info button a{
+    color: var(--grey2);
+    font-size: 25px;
+}
+div.xingxi div.more_info button a:hover{
+    text-decoration: none;
+}
+
+div.more_info button{
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    transform: scale(1);
+    background: transparent;
+    border: 1px solid var(--grey5);
+    outline: none;
+    transition: 0.1s;
+}
+div.more_info button:hover{
+    transition: 0.8s;
+    background-color:var(--grey8);
+}
+
+div.more_info button:active{
+    transition: 50ms;
+    transform: scale(0.9);
+}
+
+
+div.more_info svg{
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    fill: none;
+    stroke: var(--yellow2);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s;
+}
+div.more_info button:hover svg {
+    stroke-dashoffset: -480;
+}
+
+div.logo_payment{
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+div.logo_payment .logo img{
+    margin: 5px 10px 5px 10px;
+    height: 30px;
+    width: 76px;
+    transform: scale(1);
+    transition: 100ms;
+    cursor: pointer;
+}
+div.logo_payment .logo img:active{
+    transform: scale(0.9);
+    transition: 100ms;
+}
+
+span.about_info{
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+span.about_info:hover{
+    color: var(--pink2);
+}
+
+span.about_info_1::after{
+    content: "新加坡、中国、泰国、印尼";
+    position: absolute;
+    font-size: 24px;
+    width: 290px;
+    height: auto;
+    background-color: var(--grey9);
+    padding: 10px;
+    left: -200%;
+    top: 35px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+span.about_info_1:hover::after{
+    transition: 0.5s ease-in-out;
+    transition-delay: 150ms;
+    color: var(--grey4);
+    visibility: visible;
+    opacity: 1;
+}
+
+span.about_info_2::after{
+    content: "乌克兰、菲律宾、韩国、日本、法国";
+    position: absolute;
+    font-size: 24px;
+    width: 290px;
+    height: auto;
+    background-color: var(--grey9);
+    padding: 10px;
+    left: -80px;
+    top: 35px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+span.about_info_2:hover::after{
+    transition: 0.3s ease-in-out;
+    transition-delay: 150ms;
+    color: var(--grey4);
+    visibility: visible;
+    opacity: 1;
+}
+
+span.about_info_3::after{
+    content: "新加坡、中国、泰国、印尼、乌克兰、菲律宾、韩国、日本、法国";
+    position: absolute;
+    font-size: 24px;
+    width: 410px;
+    height: auto;
+    background-color: var(--grey9);
+    padding: 10px;
+    left: -80px;
+    top: 35px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+span.about_info_3:hover::after{
+    transition: 0.3s ease-in-out;
+    transition-delay: 150ms;
+    color: var(--grey4);
+    visibility: visible;
+    opacity: 1;
+}
+
+div.xingxi hr{
+    margin: 20px 0 20px 0;
+}
+
+
+
+div.tuikuan{
+    text-align: center;
+    margin: 40px 0;
+}
+div.tuikuan div.tuikuan_title{
+    padding-bottom: 40px;
+}
+div.tuikuan div.tuikuan_title p{
+    padding: 0;
+    font-size: 35px;
+}
+div.tuikuan div.tuikuan_title i{
+    margin: 9px 0;
+    font-size: 35px;
+}
+
+div.tuikuan div.form{
+    position: relative;
+    text-align: left;
+    margin: 0 20%;
+    padding: 25px;
+    border: 2px solid var(--grey7);
+    border-radius: 15px;
+}
+form div.form_form div label{
+    font-size: 27px;
+    color: var(--grey4);
+}
+form div.form_form div:nth-child(2){
+    margin: 45px 0;
+}
+div.tuikuan div.form #email,#carNumber,#name{
+    margin-top: 5px;
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--grey7);
+    padding: 10px 7px;
+    font-size: 22px;
+    font-family: var(--times);
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+div.tuikuan div.form #carNumber_one ,#carNumber_two ,#carNumber_three{
+    margin: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--grey7);
+    padding: 10px 7px 5px 7px;
+    font-size: 22px;
+    font-family: var(--times);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+div.tuikuan div.form div{
+    position: relative;
+}
+div.tuikuan div.form span{
+    font-family: var(--xizhengkai);
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    padding: 0 7px;
+    transition: 0.3s;
+}
+
+
+div.tuikuan div.form div.click{
+    padding: 15px 8px;
+}
+div.tuikuan div.form div.click label{
+    font-size: 15px;
+}
+div.tuikuan div.form div.click input{
+    transform: scale(1.5);
+}
+div.tuikuan div.form div.click a{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+div.tuikuan div.form div.click a:hover{
+    color: var(--yellow2);
+    transition: 0.5s;
+}
+
+div.tuikuan div.form div.submit{
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+div.tuikuan div.form div.submit button{
+    background-color: transparent;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid var(--grey7);
+    transition: 0.5s;
+    transform: scale(1);
+}
+div.tuikuan div.form div.submit button:hover{
+    background-color: var(--grey7);
+    color: var(--yellow2);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    
+}
+div.tuikuan div.form div.submit button:active{
+    transition: 100ms;
+    transform: scale(0.9);
+}
+
+div.tuikuan div.form div.submit button:disabled{
+    color: var(--grey7);
+}
+
+iframe{
+    height: 100vh;
+    width: 100%;
+}
