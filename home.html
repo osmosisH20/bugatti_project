@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="homestyle.css" type="text/css" />
+    <link rel="icon" href="24 image/logo/icon.ico" type="image/png"/>
+
+    <title>BUGATTI</title>
+
+    <script src="https://kit.fontawesome.com/58c3e06e25.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- https://osmosish20.github.io/bugatti_project/ -->
+
+    <header class="before">
+        <nav>
+            <ul>
+                <div>
+                    <li><a href="history/history.html">历史</a></li>
+                    <li><a href="carHome.html">车型</a></li> 
+                </div>
+                <a href="home.html">
+                    <img src="24 image/logo/white_logo.svg" alt="Bugatti" title="Bugatti">
+                </a>
+                <div>
+                    <li><a href="news/news.html">新闻</a></li>
+                    <li><a href="work.html">分工</a></li>
+                </div>  
+            </ul>
+        </nav>
+
+        <script>
+            window.addEventListener('scroll',function(){
+            let before = document.querySelector('.before');
+           if(window.scrollY>0)
+            {
+                before.classList.add("after");  
+            }else{
+                before.classList.remove("after");
+            }
+        })
+        </script>
+    </header>
+    
+    <div class="hero">
+        <div class="title">
+            <h1>布加迪</h1>
+            <div class="back-text">
+                <span>创</span>
+                <span>造</span>
+                <span>无</span>
+                <span>与</span>
+                <span>伦</span>
+                <span>比</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let spanTexts = document.getElementsByTagName("span")
+
+            window.onload = function(){
+
+                for(spanText of spanTexts){
+                    spanText.classList.add("active");
+                }
+            }
+    </script>
+
+    <video src="31 image/BUGATTI CENTODIECI_ Inspired by The Legendary EB110 Supersport.mp4" class="vid-bg" autoplay loop muted></video>
+
+    <div class="banner1_info">
+        <div>
+            <h1>我们的任务</h1>
+        </div>
+        <div>
+            <h2>跟我们历史在心和我们的眼睛关于未来</h2>
+            <h2>我们正在打造世界上最快、最独特、最豪华和最强大的量产超级跑车。</h2>
+        </div>
+    </div>
+
+    <div class="banner1_info">
+        <div>
+            <h1>与最优秀的人合作</h1>
+        </div>
+        <div>
+            <h2>为布加迪工作意味着重新思考、迎接挑战并不断突破界限。这是团结每一位员工并要求平等合作的动力。如果您是布加迪的一员，您将面临创新和迷人的任务，共同完成宏伟的项目。</h2>
+        </div>
+    </div>
+
+    <div class="banner1_info">
+        <div>
+            <h1>创造终极</h1>
+        </div>
+        <div>
+            <h2>“我们一直在追求完美和艺术技术。这是我们的驱动力，我们应归功于我们的传奇品牌。”</h2>
+            <p style="text-align: right;">——布加迪首相</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="st first">
+                    <img src="31 image/bugatti1.png" alt="">
+                </div>
+
+                <div class="st">
+                    <img src="31 image/bugatti2.png" alt="">
+                </div>
+
+                <div class="st">
+                    <img src="31 image/bugatti3.png" alt="">
+                </div>
+
+                <div class="st">
+                    <img src="31 image/bugatti4.png" alt="">
+                </div>
+
+                <div class="nav m nav-auto">
+                    <label for="radio1" class="m-btn a-b1"></label>
+                    <label for="radio2" class="m-btn a-b2"></label>
+                    <label for="radio3" class="m-btn a-b3"></label>
+                    <label for="radio4" class="m-btn a-b4"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById?('radio' + counter).checked=true:
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        },5000);
+    </script>
+
+    <div class="news">
+        <div class="banner5">
+            <h1>新闻</h1>
+        </div>
+
+        <div class="news_content">
+
+            <a href="news/news 6.html" target="_blank">
+                <div class="card">
+                    <div>
+                        <img src="31 image/se-image-073da9b3b92292b2eb1d8f610002915f.webp" alt="">
+                    </div>
+                    <div>
+                        <p>BUGATTI ANNOUNCES SENIOR APPOINTMENTS</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="news/news 1.html" target="_blank">
+                <div class="card">
+                    <div>
+                        <img src="31 image/se-image-ad1baf3f286cbe3f8616792727e9c45a.webp" alt="">
+                    </div>
+                    <div>
+                        <p>BUGATTI FESTIVAL: HONORING THE BIRTHPLACE OF AN ICONIC BRAND</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="news/news 5.html" target="_blank">
+                <div class="card">
+                    <div>
+                        <img src="31 image/se-image-67ad085fba93cf6240f705f6889c50f4.webp" alt="">
+                    </div>
+                    <div>
+                        <p>BUGATTI CENTODIECI: INSPIRED BY THE LEGENDARY EB110 SUPERSPORT</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="news/news 3.html" target="_blank">
+                <div class="card">
+                    <div>
+                        <img src="31 image/kklm.webp" alt="">
+                    </div>
+                    <div>
+                        <p>BUGATTI CERTIFIED PRE-OWNED: INCOMPARABLE QUALITY GUARANTEED</p>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="btn">
+            <div class="button">
+                <a href="news/news.html" class="link">了解更多</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="more">
+        <div class="banner5">
+            <h1>浏览更多</h1>
+        </div>
+
+        <div class="first">
+            <div>
+                <img src="31 image/bugatti-bolide-front.jpg" alt="">
+            </div>
+            <div class="btn">
+                <div class="button">
+                    <a href="carHome.html" class="link">车型</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="second">
+            <div>
+                <img src="31 image/Bugatti-Centodieci-Design-Sketches-02.jpg" alt="">
+            </div>
+            <div class="btn">
+                <div class="button">
+                    <a href="history/history.html" class="link">历史</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gallery" id="gallery">
+        <div class="row">
+            <div>
+                <h1>我们的组队</h1>
+            </div>
+            <div>
+                <img src="31 image/straight line1.png" alt="">
+                <a href="work.html"><div class="overlay">
+                    24 谢国志
+                  </div></a>
+            </div>
+            <div></div>
+            <div><img src="31 image/line 2.jpg" alt="">
+                <a href="work.html"><div class="overlay">
+                    25 蔡玟颐
+                  </div></a></div>
+        </div>
+
+        <div class="row">
+            <div><img src="31 image/line 2.jpg" alt="">
+                <a href="work.html"><div class="overlay">
+                    31 罗曼
+                  </div></a></div>
+            <div></div>
+            <div><img src="31 image/line 2.jpg" alt="">
+                <a href="work.html"><div class="overlay">
+                    34 戴昱哲
+                  </div></a></div>
+            <div><img src="31 image/straight line1.png" alt="">
+                <a href="work.html"><div class="overlay">
+                    37 郑奕轩
+                  </div></a></div>
+        </div>
+        
+    </div>
+
+    
+    <footer> 
+        <nav> 
+            <div>
+                <li class="goBack">
+                    <a href="#" rel="internal">
+                        <i class="fa-solid fa-angle-up" title="回到上面"></i>
+                        <i class="fa-solid fa-angle-up" style=" opacity: 0.8;" title="回到上面"></i>
+                        <i class="fa-solid fa-angle-up" style="opacity: 0.6;"  title="回到上面"></i>
+                        <i class="fa-solid fa-angle-up" style=" opacity: 0.4;"  title="回到上面"></i>
+                    </a>
+                </li> 
+            </div>
+
+            <ul class="icon"> 
+                <li class="facebook">
+                    <a href="https://www.facebook.com/bugatti/" target="_blank">
+                        <i class="fa-brands fa-facebook-f" style="--iconClr:#4267B2"></i>
+                    </a>
+                </li> 
+                <li class="youtube">
+                    <a  href="https://www.youtube.com/BugattiSocial" target="_blank">
+                        <i class="fa-brands fa-youtube" style="--iconClr:#FF0000"></i>
+                    </a>
+                </li> 
+                <li class="whatsapp">
+                    <a href="https://www.whatsapp.com/" target="_blank">
+                        <i class="fa-brands fa-whatsapp" style="--iconClr:#25D366"></i>
+                    </a>
+                </li> 
+                <li class="instagram">
+                    <a  href="https://instagram.com/bugatti" target="_blank">
+                        <i class="fa-brands fa-instagram" style="--iconClr:#C13584"></i>
+                    </a>
+                </li> 
+                <li class="pinterest">
+                    <a href="https://www.pinterest.de/bugatti/" target="_blank">
+                        <i class="fa-brands fa-pinterest-p" style="--iconClr:#E60023"></i>
+                    </a>
+                </li> 
+                <li class="gmail">
+                    <a href="mailto:#contus.bugatti@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope" style="--iconClr:#FBBC05"></i>
+                    </a>
+                </li> 
+            </ul> 
+
+            <div class="contact">
+                <a href="info/contact-us.html"><span>联系我们</span><i></i></a>
+            </div>
+
+            <ul class="metiral">
+                <a href="info/privacy.html"><li>隐私政策</li></a>
+                <a href="info/terms-of-use.html"><li>使用条款</li></a>
+                <a href="info/legal-notice.html"><li>法律声明</li></a>
+                <a href="info/ethics-and-culture.html"><li>道德与文化</li></a>
+                <a href="info/shipping-payment.html"><li>运输和付款</li></a>
+                <a href="info/back-service.html"><li>退款政策</li></a>
+            </ul>
+        </nav>
+
+        <hr />
+
+        <div class="under">
+            <div class="logo" title="bugatti">
+                <a href="home.html">
+                    <img src="24 image/logo/white_logo.svg" alt="bugatti_logo">
+                    <h1>Bugatti</h1>
+                </a>
+            </div> 
+
+            <div class="copyright"> 
+                <span> Copyright © 2022. Bugatti Automobiles S.A.S. All Right Reserved </span> 
+            </div>
+
+            <div class="payment">
+                <div class="first">
+                    <span><img src="24 image/payment/zhifubao.png" alt="apple-pay"></span>
+                    <span><img src="24 image/payment/shopee.png" alt="shoppe-pay"></span>
+                    <span><img src="24 image/payment/boost.png" alt="boost-pay"></span>
+                </div>
+                <div class="second">
+                    <span><img src="24 image/payment/paypal.png" alt="paypal-pay"></span>
+                    <span><img src="24 image/payment/mastercard.png" alt="master-pay"></span>
+                    <span><img src="24 image/payment/visa.png" alt="visa-pay"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

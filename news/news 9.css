@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.banner_10 img{
+    width: 99vw;
+    height: 80vh;
+}
+
+.banner_10_info{
+    width: 75%;
+    margin: 30px auto;
+}
+
+.title h1{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--yellow2);
+}
+
+.body p{
+    font-size: 23px;
+    line-height: 25px;
+    color: var(--grey3);
+    font-family:'Times New Roman', Times, serif;
+    margin: 10px 5px;
+}
